@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Find a Film</string>
+    <string name="snatch">Snatch</string>
+    <string name="details">Details</string>
+    <string name="lock_stock_and_two_smoking_barrels"><![CDATA[Lock ,stock & two smoking barrels]]></string>
+    <string name="rocknrolla">RockNRolla</string>
+    <string name="selected_film_image">selected film image</string>
+    <string name="snatch_description">Stealing stones is hazardous</string>
+    <string name="share">Share</string>
+    <string name="like">Like</string>
+    <string name="leave_your_comment">Leave your comment</string>
+    <string name="lock_stock_description">They lost half a million at cards but they\'ve still got a few tricks up their sleeve</string>
+    <string name="rocknrolla_description">Sex, guns and rock\'n\'roll</string>
 </resources>
