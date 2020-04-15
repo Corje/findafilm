@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +19,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var lockStockButton: Button
     private lateinit var rocknrollaButton: Button
     private lateinit var textViewsList: List<TextView>
-    private var selectedViewIndex: Int? = null
+
+    private val filmViewModel: FilmViewModel by lazy {
+        ViewModelProvider(this).get(FilmViewModel::class.java)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,9 +37,9 @@ class MainActivity : AppCompatActivity() {
         textViewsList = listOf(snatchTextView, lockStockTextView, rocknrollaTextView)
 
         fun setListener(textView: TextView, film: Film) {
-            selectedViewIndex?.let { textViewsList[it].setBackgroundColor(Color.TRANSPARENT) }
+            filmViewModel.selectedViewIndex?.let { textViewsList[it].setBackgroundColor(Color.TRANSPARENT) }
             textView.setBackgroundResource(R.color.selected_color)
-            selectedViewIndex = textViewsList.indexOf(textView)
+            filmViewModel.selectedViewIndex = textViewsList.indexOf(textView)
 
             Intent(this, ConcreteFilmActivity::class.java).apply {
                 putExtra("film", film)
@@ -56,22 +60,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         savedInstanceState?.let {
-            selectedViewIndex = savedInstanceState.getInt(SELECTED_VIEW_INDEX)
-            selectedViewIndex?.let { textViewsList[it].setBackgroundResource(R.color.selected_color) }
+            filmViewModel.selectedViewIndex = savedInstanceState.getInt(SELECTED_VIEW_INDEX)
+            filmViewModel.selectedViewIndex?.let { textViewsList[it].setBackgroundResource(R.color.selected_color) }
         }
-    }
-
-    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
-        super.onRestoreInstanceState(savedInstanceState)
-
-        selectedViewIndex = savedInstanceState.getInt(SELECTED_VIEW_INDEX)
-        selectedViewIndex?.let { textViewsList[it].setBackgroundResource(R.color.selected_color) }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
 
-        selectedViewIndex?.let { outState.putInt(SELECTED_VIEW_INDEX, it) }
+        filmViewModel.selectedViewIndex?.let { outState.putInt(SELECTED_VIEW_INDEX, it) }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
