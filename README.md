@@ -1,1 +1,1 @@
-The app to find your favourite film
+# findafilm app to get info about your favourite films

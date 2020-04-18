@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConcreteFilmActivity">
+
+    <ImageView
+        android:id="@+id/selected_film_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/film_image_height"
+        android:contentDescription="@string/selected_film_image" />
+
+    <TextView
+        android:id="@+id/selected_film_text_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="22sp" />
+
+    <CheckBox
+        android:id="@+id/like_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/like" />
+
+    <EditText
+        android:id="@+id/comment_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/leave_your_comment" />
+
+
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share"
+        android:layout_gravity="center" />
+
+</LinearLayout>

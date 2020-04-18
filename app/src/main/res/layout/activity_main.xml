@@ -1,18 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/film_image_height"
+            android:contentDescription="@string/snatch"
+            android:src="@drawable/snatch" />
+        <TextView
+            android:id="@+id/snatch_text_view"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/snatch"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/snatch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/details" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/film_image_height"
+            android:contentDescription="@string/lock_stock_and_two_smoking_barrels"
+            android:src="@drawable/lock_stock_and_two_smoking_barrels" />
+        <TextView
+            android:id="@+id/lock_stock_text_view"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/lock_stock_and_two_smoking_barrels"
+            android:layout_gravity="center"
+            android:textSize="@dimen/film_title_size"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/lock_stock_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/details" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/film_image_height"
+            android:contentDescription="@string/rocknrolla"
+            android:src="@drawable/rocknrolla" />
+        <TextView
+            android:id="@+id/rocknrolla_text_view"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/rocknrolla"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/rocknrolla_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/details" />
+    </LinearLayout>
+
+</ScrollView>
