@@ -60,7 +60,9 @@ class MainActivity : AppCompatActivity(), BackDialogFragment.BackDialogListener 
         }
 
         savedInstanceState?.let {
-            filmViewModel.selectedViewIndex = savedInstanceState.getInt(SELECTED_VIEW_INDEX)
+            if (it.containsKey(SELECTED_VIEW_INDEX)) {
+                filmViewModel.selectedViewIndex = savedInstanceState.getInt(SELECTED_VIEW_INDEX)
+            }
             filmViewModel.selectedViewIndex?.let { textViewsList[it].setBackgroundResource(R.color.selected_color) }
         }
     }
