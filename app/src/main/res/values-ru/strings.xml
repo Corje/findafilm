@@ -11,4 +11,8 @@
     <string name="leave_your_comment">Оставить комментарий</string>
     <string name="lock_stock_description">Они потеряли полмиллиона на картах, но у них все еще есть несколько хитростей в рукаве</string>
     <string name="rocknrolla_description">Секс, пушки и рок-н-ролл</string>
+    <string name="you_are_going_to_quit">Вы покидаете приложение</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="switch_day_night_mode">Ночной режим</string>
 </resources>

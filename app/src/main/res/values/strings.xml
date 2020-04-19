@@ -14,4 +14,5 @@
     <string name="you_are_going_to_quit">You are going to quit</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="switch_day_night_mode">Night mode</string>
 </resources>

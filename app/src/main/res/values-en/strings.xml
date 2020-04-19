@@ -11,4 +11,8 @@
     <string name="leave_your_comment">Leave your comment</string>
     <string name="lock_stock_description">They lost half a million at cards but they\'ve still got a few tricks up their sleeve</string>
     <string name="rocknrolla_description">Sex, guns and rock\'n\'roll</string>
+    <string name="you_are_going_to_quit">You are going to quit</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="switch_day_night_mode">Night mode</string>
 </resources>
