@@ -4,7 +4,6 @@ import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
 import android.widget.Button
-import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import java.lang.ClassCastException
 
@@ -15,21 +14,6 @@ class BackDialogFragment : DialogFragment() {
     interface BackDialogListener {
         fun onDialogPositiveClick()
     }
-
-    /*override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        return activity?.let {
-            val builder = AlertDialog.Builder(it)
-            builder
-                .setMessage("message")
-                .setPositiveButton("positive") { dialog, _ ->
-                    listener.onDialogPositiveClick()
-                }
-                .setNegativeButton("negative") { dialog, _ ->
-                    dialog.dismiss()
-                }
-                .create()
-        } ?: throw IllegalStateException("Activity cannot be null")
-    }*/
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return activity?.let {

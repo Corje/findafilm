@@ -72,8 +72,6 @@ class MainActivity : AppCompatActivity(), BackDialogFragment.BackDialogListener 
             filmViewModel.selectedViewIndex?.let { textViewsList[it].setBackgroundResource(R.color.selected_color) }
         }
 
-        //AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
