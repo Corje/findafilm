@@ -7,5 +7,14 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    
+    <style name="FilmTitle" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FilmDescription" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
 
 </resources>

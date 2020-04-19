@@ -17,13 +17,13 @@
             android:contentDescription="@string/snatch"
             android:src="@drawable/snatch" />
         <TextView
+            style="@style/FilmTitle"
             android:id="@+id/snatch_text_view"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/snatch"
             android:layout_gravity="center"
-            android:textSize="22sp"
-            android:textStyle="bold"/>
+            android:textSize="@dimen/film_title_size" />
         <Button
             android:id="@+id/snatch_button"
             android:layout_width="wrap_content"
@@ -37,13 +37,13 @@
             android:contentDescription="@string/lock_stock_and_two_smoking_barrels"
             android:src="@drawable/lock_stock_and_two_smoking_barrels" />
         <TextView
+            style="@style/FilmTitle"
             android:id="@+id/lock_stock_text_view"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/lock_stock_and_two_smoking_barrels"
             android:layout_gravity="center"
-            android:textSize="@dimen/film_title_size"
-            android:textStyle="bold"/>
+            android:textSize="@dimen/film_title_size" />
         <Button
             android:id="@+id/lock_stock_button"
             android:layout_width="wrap_content"
@@ -57,13 +57,13 @@
             android:contentDescription="@string/rocknrolla"
             android:src="@drawable/rocknrolla" />
         <TextView
+            style="@style/FilmTitle"
             android:id="@+id/rocknrolla_text_view"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/rocknrolla"
             android:layout_gravity="center"
-            android:textSize="22sp"
-            android:textStyle="bold"/>
+            android:textSize="@dimen/film_title_size" />
         <Button
             android:id="@+id/rocknrolla_button"
             android:layout_width="wrap_content"

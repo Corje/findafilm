@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="11dp"
+                android:id="@+id/snatch_image"
+                android:layout_width="@dimen/film_width"
+                android:layout_height="@dimen/film_image_height"
+                android:contentDescription="@string/snatch"
+                android:src="@drawable/snatch" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/snatch_image"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:id="@+id/snatch_text_view"
+                    style="@style/FilmTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="11dp"
+                    android:text="@string/snatch"
+                    android:textSize="@dimen/film_title_size" />
+
+                <Button
+                    android:id="@+id/snatch_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="11dp"
+                android:id="@+id/lock_stock_image"
+                android:layout_width="@dimen/film_width"
+                android:layout_height="@dimen/film_image_height"
+                android:contentDescription="@string/lock_stock_and_two_smoking_barrels"
+                android:src="@drawable/lock_stock_and_two_smoking_barrels" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/lock_stock_image"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:id="@+id/lock_stock_text_view"
+                    style="@style/FilmTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="11dp"
+                    android:text="@string/lock_stock_and_two_smoking_barrels"
+                    android:textSize="@dimen/film_title_size" />
+
+                <Button
+                    android:id="@+id/lock_stock_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="11dp"
+                android:id="@+id/rocknrolla_image"
+                android:layout_width="@dimen/film_width"
+                android:layout_height="@dimen/film_image_height"
+                android:contentDescription="@string/rocknrolla"
+                android:src="@drawable/rocknrolla" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/rocknrolla_image"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:id="@+id/rocknrolla_text_view"
+                    style="@style/FilmTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="11dp"
+                    android:text="@string/rocknrolla"
+                    android:textSize="@dimen/film_title_size" />
+
+                <Button
+                    android:id="@+id/rocknrolla_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

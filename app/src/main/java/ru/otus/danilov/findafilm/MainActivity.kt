@@ -10,7 +10,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), BackDialogFragment.BackDialogListener {
 
     private lateinit var snatchTextView: TextView
     private lateinit var lockStockTextView: TextView
@@ -86,6 +86,14 @@ class MainActivity : AppCompatActivity() {
 
         Log.i(MY_TAG, "checkbox value is $isLiked")
         Log.i(MY_TAG, if (comment.isNullOrEmpty()) "no comment" else "comment value is $comment")
+    }
+
+    override fun onBackPressed() {
+        BackDialogFragment().show(supportFragmentManager, "DialogTag")
+    }
+
+    override fun onDialogPositiveClick() {
+        super.onBackPressed()
     }
 
     companion object {
