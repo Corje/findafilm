@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Find a Film</string>
     <string name="snatch">Snatch</string>
     <string name="details">Details</string>
     <string name="lock_stock_and_two_smoking_barrels"><![CDATA[Lock ,stock & two smoking barrels]]></string>
     <string name="rocknrolla">RockNRolla</string>
-    <string name="selected_film_image" translatable="false">selected film image</string>
     <string name="snatch_description">Stealing stones is hazardous</string>
     <string name="share">Share</string>
     <string name="like">Like</string>

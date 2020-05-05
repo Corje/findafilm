@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Найди фильм</string>
+    <string name="snatch">Больщой куш</string>
+    <string name="details">Детали</string>
+    <string name="lock_stock_and_two_smoking_barrels">Карты, деньги, два ствола</string>
+    <string name="rocknrolla">Рокнорольщик</string>
+    <string name="snatch_description">Воровать камни опасно</string>
+    <string name="share">Поделиться</string>
+    <string name="like">Нравится</string>
+    <string name="leave_your_comment">Оставить комментарий</string>
+    <string name="lock_stock_description">Они потеряли полмиллиона на картах, но у них все еще есть несколько хитростей в рукаве</string>
+    <string name="rocknrolla_description">Секс, пушки и рок-н-ролл</string>
+    <string name="you_are_going_to_quit">Вы покидаете приложение</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="switch_day_night_mode">Ночной режим</string>
+</resources>
