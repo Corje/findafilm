@@ -1,4 +1,4 @@
-package ru.otus.danilov.findafilm
+package com.jetbrains.danilov.alex.mylibrary
 
 import org.junit.Test
 

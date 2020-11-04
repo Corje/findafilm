@@ -1,12 +1,12 @@
-package ru.otus.danilov.findafilm
+package ru.alex.danilov.findafilm
 
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
-import ru.otus.danilov.findafilm.MainActivity.Companion.COMMENT_VALUE
-import ru.otus.danilov.findafilm.MainActivity.Companion.LIKE_VALUE
+import ru.alex.danilov.findafilm.MainActivity.Companion.COMMENT_VALUE
+import ru.alex.danilov.findafilm.MainActivity.Companion.LIKE_VALUE
 
 class ConcreteFilmActivity : AppCompatActivity() {
 

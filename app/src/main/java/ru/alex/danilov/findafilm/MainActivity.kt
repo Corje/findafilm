@@ -1,4 +1,4 @@
-package ru.otus.danilov.findafilm
+package ru.alex.danilov.findafilm
 
 import android.app.Activity
 import android.content.Intent
